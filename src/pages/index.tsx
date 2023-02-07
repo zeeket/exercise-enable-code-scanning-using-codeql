@@ -1,7 +1,7 @@
 import { trpc } from "../utils/trpc";
 
 export default function IndexPage() {
-  const hello = trpc.hello.useQuery({ text: "client" });
+  const hello = trpc.hello.useQuery({ text: "GitHub" });
   // CMD+Click (or CTRL+Click) on `hello` to see the server-definition
   if (!hello.data) {
     return (
